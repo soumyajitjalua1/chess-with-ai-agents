@@ -137,13 +137,13 @@ const EndgameChallenges = () => {
     <div className="min-h-screen bg-gray-900 text-white p-4 lg:p-8">
         <header className="mb-6">
             <div className="flex items-center">
-                <Link to="/" className="inline-flex items-center text-gray-300 hover:text-white">
+                <Link to="/learn" className="inline-flex items-center text-gray-300 hover:text-white">
                     <ChevronRight size={20} className="rotate-180 mr-1" />
-                    <span>Back to Home</span>
+                    <span>Back </span>
                 </Link>
                 <div className="flex-1 text-center">
                     <h1 className="text-5xl font-bold text-red-600 mb-2">
-                        Master Chess Tactics
+                        Endgame Chess Tactics
                     </h1>
                     <p className="text-sm lg:text-base text-gray-400">
                         Click on any tactic below to see it demonstrated

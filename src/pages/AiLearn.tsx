@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Chessboard } from 'react-chessboard';
 import { Chess } from 'chess.js';
+import { ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const AIOpeningTrainer = () => {
   const [game, setGame] = useState(new Chess());
@@ -28,14 +30,7 @@ const AIOpeningTrainer = () => {
     groq: import.meta.env.VITE_GROQ_API_KEY || ''
   };
 
-  // For development, you can use hardcoded keys if needed
-  // Comment this out before production
-  /*
-  const API_KEYS = {
-    openai: 'sk-your-openai-key-here',
-    groq: 'gsk-your-groq-key-here'
-  };
-  */
+  
 
   const callAI = async (messagesHistory) => {
     setLoading(true);
@@ -184,7 +179,7 @@ const AIOpeningTrainer = () => {
         to,
         promotion,
       });
-
+  
       if (move === null) return false;
       
       setPosition(game.fen());
@@ -283,13 +278,23 @@ const AIOpeningTrainer = () => {
   return (
     <div className="flex flex-col min-h-screen h-full bg-gray-900 text-white">
         <header className="bg-gray-800 p-4 border-b border-gray-700 shadow-lg">
-            <div className="max-w-7xl mx-auto px-2">
-                <h1 className="text-2xl font-bold text-red-600 text-center">
+            
+
+
+              <div className="flex items-center">
+                <Link to="/learn" className="inline-flex items-center text-gray-300 hover:text-white">
+                    <ChevronRight size={20} className="rotate-180 mr-1" />
+                    <span>Back </span>
+                </Link>
+                <div className="max-w-8xl mx-auto px-3">
+                <h1 className="text-3xl font-bold text-red-600 text-center">
                 AI Opening Trainer
                 </h1>
-                <p className="text-gray-300 text-center text-xs">
+                <p className="text-gray-300 text-center text-xs mt-1">
                 Learn chess openings with AI guidance
                 </p>
+            </div>
+                <div className="w-[100px]"></div> 
             </div>
         </header>
       
