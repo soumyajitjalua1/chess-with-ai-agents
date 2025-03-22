@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Twitter, Github, Youtube } from 'lucide-react';
+import { Twitter, Github, Youtube, Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -64,18 +64,24 @@ const Footer = () => {
           <div className="text-left">
             <h3 className="text-white font-medium mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://x.com/Soumyajitjalua" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/soumyajitjalua1" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Github size={20} />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                <Youtube size={20} />
+              <a href="https://www.facebook.com/profile.php?id=61556806895133" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Facebook size={20} />
+              </a>
+              <a href="https://www.instagram.com/soumyajitjalua/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Instagram size={20} />
+              </a>
+              <a href="https://www.linkedin.com/in/soumyajit-jalua-09a98a270/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Linkedin size={20} />
               </a>
             </div>
             <p className="text-gray-500 text-xs mt-6">
-              © 2024 AI Chess Arena. All rights reserved.
+              © 2025 AI Chess Arena. All rights reserved.
             </p>
           </div>
         </div>

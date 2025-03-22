@@ -29,9 +29,9 @@ const Navbar = () => {
 
   const menuItems = [
     { name: 'Home', path: '/' },
-    { name: 'Games', path: '/games' },
+    { name: 'Games', path: '/play' },
     { name: 'Learn', path: '/learn' },
-    { name: 'Community', path: '/community' },
+    { name: 'leaderboard', path: '/leaderboard' },
   ];
 
   return (

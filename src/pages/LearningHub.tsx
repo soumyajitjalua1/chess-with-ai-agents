@@ -1,8 +1,9 @@
-
 import { useState } from 'react';
 import Layout from '../components/layout/Layout';
 import { BookOpen, Lightbulb, Target, Dices, Clock, ChevronRight } from 'lucide-react';
 import { Slider } from '@/components/ui/slider';
+import { Link } from 'react-router-dom';
+
 
 // Learning card component
 const LearningCard = ({ 
@@ -10,13 +11,15 @@ const LearningCard = ({
   description, 
   image, 
   buttonText, 
-  buttonColor 
+  buttonColor,
+  link 
 }: { 
   title: string; 
   description: string; 
   image: string; 
   buttonText: string; 
   buttonColor: string;
+  link: string;
 }) => {
   const buttonClass = buttonColor === 'red' 
     ? 'button-primary' 
@@ -36,10 +39,10 @@ const LearningCard = ({
       </div>
       <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
       <p className="text-gray-400 text-sm mb-4">{description}</p>
-      <button className={`${buttonClass} w-full flex items-center justify-center`}>
+      <Link to={link} className={`${buttonClass} w-full flex items-center justify-center`}>
         <span>{buttonText}</span>
         <ChevronRight size={16} className="ml-1" />
-      </button>
+      </Link>
     </div>
   );
 };
@@ -96,6 +99,11 @@ const LearningHub = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-chess-darker"></div>
         
         <div className="container relative z-10 mx-auto px-4">
+          {/* <Link to="/" className="inline-flex items-center text-gray-300 hover:text-white mb-6">
+            <ChevronRight size={20} className="rotate-180 mr-1" />
+            <span>Back to Home</span>
+          </Link> */}
+
           <div className="text-center mb-12">
             <h1 className="text-3xl md:text-5xl font-bold text-chess-blue mb-2">
               AI Chess Master
@@ -121,8 +129,9 @@ const LearningHub = () => {
             <LearningCard 
               title="Tactics Drills" 
               description="Master tactical patterns with AI-curated puzzles."
-              image="/lovable-uploads/8710a9d4-38d8-476c-8f50-507f86fdfbb2.png" 
+              image="https://media.istockphoto.com/id/511117530/photo/hand-moving-the-king-in-chess-game.jpg?s=2048x2048&w=is&k=20&c=dURR-7NCapVMb5rPE_2xydeWGGA8OWj75KGenta2FaE=" 
               buttonText="Train Now" 
+              link="/tactics-drills"
               buttonColor="blue"
             />
             <LearningCard 
@@ -131,13 +140,15 @@ const LearningHub = () => {
               image="/lovable-uploads/7a58b658-097a-4b6e-a817-ae66da473e41.png" 
               buttonText="Train Now" 
               buttonColor="purple"
+              link="/ai-learn"
             />
             <LearningCard 
               title="Endgame Challenges" 
               description="Perfect your endgame techniques with AI guidance."
-              image="/lovable-uploads/f1b16569-5a77-4d1c-a2e4-41fcff062844.png" 
+              image="https://www.shutterstock.com/image-photo/checkmate-mans-hand-hitting-king-600nw-1807633336.jpg" 
               buttonText="Train Now" 
               buttonColor="red"
+              link="/endgame-challenges"
             />
           </div>
           

@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
@@ -53,9 +52,9 @@ const Hero = () => {
             Start Playing Now
             <ChevronRight className="inline-block ml-2 transition-transform group-hover:translate-x-1" size={18} />
           </Link>
-          <Link to="/watch" className="button-ghost">
+          <a href="https://www.youtube.com/watch?v=P4fCFom_KzI&ab_channel=ChessTalk" target="_blank" rel="noopener noreferrer" className="button-ghost">
             Watch Matches
-          </Link>
+          </a>
         </div>
       </div>
     </section>

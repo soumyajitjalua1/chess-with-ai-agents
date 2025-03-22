@@ -15,7 +15,14 @@ import PlayerProfile from "./pages/PlayerProfile";
 import Leaderboard from "./pages/Leaderboard";
 import LearningHub from "./pages/LearningHub";
 import NotFound from "./pages/NotFound";
-
+import Game from "./pages/Game";
+import Classical from "./pages/Classical";
+import AIChessChallenge from "./pages/aiAgents";
+import Multiplayer from "./pages/multiplayer";
+import TacticsDrills from "./pages/TacticsDrills";
+import EndgameChallenges from "./pages/endGame";
+import AiLearn from "./pages/AiLearn";
+import UnderConstructionPage from "./pages/UnderConstructionPage";
 // Create a QueryClient instance
 const queryClient = new QueryClient();
 
@@ -72,9 +79,44 @@ const App = () => (
                 <GameInterface />
               </AnimatedRoute>
             } />
+            <Route path="/Playclassic" element={
+              <AnimatedRoute>
+                <Classical />
+              </AnimatedRoute>
+            } />
+            <Route path="/play-ai-challenge" element={
+              <AnimatedRoute>
+                <AIChessChallenge />
+              </AnimatedRoute>
+            } />
+            <Route path="/multiplayer" element={
+              <AnimatedRoute>
+                <Multiplayer />
+              </AnimatedRoute>
+            } />
+            <Route path="/ai-learn" element={
+              <AnimatedRoute>
+                <AiLearn />
+              </AnimatedRoute>
+            } />
+            <Route path="/tactics-drills" element={
+              <AnimatedRoute>
+                <TacticsDrills />
+              </AnimatedRoute>
+            } />
+            <Route path="/endgame-challenges" element={
+              <AnimatedRoute>
+                <EndgameChallenges />
+              </AnimatedRoute>
+            } />
             <Route path="/settings" element={
               <AnimatedRoute>
                 <Settings />
+              </AnimatedRoute>
+            } />
+            <Route path="/games" element={
+              <AnimatedRoute>
+                <Game />
               </AnimatedRoute>
             } />
             <Route path="/analysis" element={
@@ -97,7 +139,7 @@ const App = () => (
                 <LearningHub />
               </AnimatedRoute>
             } />
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<UnderConstructionPage />} />
           </Routes>
         </AnimatePresence>
       </BrowserRouter>

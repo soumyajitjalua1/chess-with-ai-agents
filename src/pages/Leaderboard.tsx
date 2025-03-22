@@ -1,4 +1,3 @@
-
 import Layout from '../components/layout/Layout';
 import { Trophy, ArrowUp, ArrowDown, User, Shield, Map } from 'lucide-react';
 
@@ -100,11 +99,11 @@ const RisingPlayerCard = ({ name, image, gain }: { name: string; image: string; 
 const Leaderboard = () => {
   // Mock data for players
   const topPlayers = [
-    { rank: 1, trend: 'up', name: 'NeuralNinja', image: '/lovable-uploads/090eeb9d-c437-4e03-a7ea-b4561ecb106a.png', elo: 2840, streak: 8 },
-    { rank: 2, trend: 'down', name: 'QuantumQueen', image: '/lovable-uploads/f1b16569-5a77-4d1c-a2e4-41fcff062844.png', elo: 2795, streak: 5 },
-    { rank: 3, trend: 'up', name: 'GrandMaster X', image: '/lovable-uploads/090eeb9d-c437-4e03-a7ea-b4561ecb106a.png', elo: 2760, streak: 3, isUser: true },
-    { rank: 4, trend: 'neutral', name: 'ChessWhiz99', image: '/lovable-uploads/f1b16569-5a77-4d1c-a2e4-41fcff062844.png', elo: 2710, streak: 0 },
-    { rank: 5, trend: 'down', name: 'DeepThought', image: '/lovable-uploads/090eeb9d-c437-4e03-a7ea-b4561ecb106a.png', elo: 2685, streak: 2 },
+    { rank: 1, trend: 'up', name: 'NeuralNinja', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhtoQVc3MypF-_r_Z8ru10P9NJEGMmk6D8A&s', elo: 2840, streak: 8 },
+    { rank: 2, trend: 'down', name: 'QuantumQueen', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8JBWjs5MKdtxCyEqiKckkvf8RtBJnbf2UALgAEnWKI4CwlgklHXB-hobgKelfANoyfpM&usqp=CAU', elo: 2795, streak: 5 },
+    { rank: 3, trend: 'up', name: 'Soumyajit', image: 'https://i.redd.it/the-only-arguably-ethical-use-of-ai-generated-art-i-can-v0-1l42jc059xdb1.png?width=1024&format=png&auto=webp&s=89351b4a98e7c360b541a499729671cf97a216b6', elo: 2760, streak: 3, isUser: true },
+    { rank: 4, trend: 'neutral', name: 'ChessWhiz99', image: 'https://imagineme-ai.b-cdn.net/wp-content/uploads/2023/12/c061625c-1-1-lilycollins-woman-moebius-comic-book-style-scifi-city-landscape-illustration-c.jpg', elo: 2710, streak: 0 },
+    { rank: 5, trend: 'down', name: 'DeepThought', image: 'https://imgcdn.stablediffusionweb.com/2024/4/2/57cedf8d-2355-4bcc-91cb-2cfebbe19b2c.jpg', elo: 2685, streak: 2 },
   ];
   
   return (
@@ -161,11 +160,11 @@ const Leaderboard = () => {
           </div>
           
           {/* Sidebar - rising players and top AI */}
-          <div className="md:col-span-1 space-y-6">
+          <div className="md:col-span-1 space-y-4">
             {/* Rising Players */}
-            <div className="chess-card">
-              <h3 className="text-white font-semibold mb-4">Rising Players</h3>
-              <div className="space-y-3">
+            <div className="bg-chess-darker rounded-lg shadow-lg">
+              <h3 className="text-white font-semibold mb-2 px-3 pt-2">Rising Players</h3>
+              <div className="space-y-2 px-2 pb-2">
                 <RisingPlayerCard 
                   name="SylvMaster" 
                   image="/lovable-uploads/090eeb9d-c437-4e03-a7ea-b4561ecb106a.png" 
@@ -180,9 +179,9 @@ const Leaderboard = () => {
             </div>
             
             {/* Top AI Opponents */}
-            <div className="chess-card">
-              <h3 className="text-white font-semibold mb-4">Top AI Opponents</h3>
-              <div className="space-y-3">
+            <div className="bg-chess-darker rounded-lg shadow-lg">
+              <h3 className="text-white font-semibold mb-2 px-3 pt-2">Top AI Opponents</h3>
+              <div className="space-y-2 px-2 pb-2">
                 <AIOpponentCard 
                   name="DeepMind Elite" 
                   image="/lovable-uploads/39866914-748b-4dea-90f0-7dd9fe5ef58a.png" 

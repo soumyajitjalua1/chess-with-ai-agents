@@ -99,9 +99,9 @@ const GameModes = () => {
             <GameCard 
               title="Classic Chess" 
               description="Master the timeless game with our advanced AI opponents."
-              image="/lovable-uploads/7a58b658-097a-4b6e-a817-ae66da473e41.png" 
+              image="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000058044/2139d52186b7961ba59e29c7cd047dbd7a564d0988d5b373cf722dd076126a6f" 
               buttonText="Play Classic"
-              link="/play/classic"
+              link="/Playclassic"
             />
           </motion.div>
           
@@ -109,9 +109,9 @@ const GameModes = () => {
             <GameCard 
               title="AI Challenge" 
               description="Face off against our most powerful AI opponents with unique personalities."
-              image="/lovable-uploads/8710a9d4-38d8-476c-8f50-507f86fdfbb2.png" 
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVr4PSvLgMxUNauhDZ1wdHbSRoYZPnsWZBpA&s" 
               buttonText="Challenge AI"
-              link="/play/ai-challenge"
+              link="/play-ai-challenge"
             />
           </motion.div>
           
@@ -119,9 +119,9 @@ const GameModes = () => {
             <GameCard 
               title="Multiplayer" 
               description="Compete against players from around the world in real-time matches."
-              image="/lovable-uploads/f1b16569-5a77-4d1c-a2e4-41fcff062844.png" 
+              image="https://images.crazygames.com/chess-online-multiplayer-game_16x9/20241008073624/chess-online-multiplayer-game_16x9-cover?auto=format,compress&q=75&cs=strip" 
               buttonText="Find Match"
-              link="/play/multiplayer"
+              link="/multiplayer"
             />
           </motion.div>
         </motion.div>
