@@ -2,7 +2,7 @@
 
 AI Chess Arena is a comprehensive chess platform that leverages AI to help players of all levels improve their game. The platform combines traditional chess gameplay with advanced AI analysis, learning resources, and multiplayer capabilities.
 
-![AI Chess Arena Logo](https://github.com/yourusername/ai-chess-arena/blob/main/public/images/logo.png)
+![AI Chess Arena Logo](https://github.com/soumyajitjalua1/chess-with-ai-agents/blob/main/Screenshot%202025-03-22%20231827.png)
 
 ## Features
 
@@ -13,15 +13,20 @@ AI Chess Arena is a comprehensive chess platform that leverages AI to help playe
 - Material evaluation and check detection
 - Board control assessment
 
+  ![Ai Move](https://github.com/soumyajitjalua1/chess-with-ai-agents/blob/main/Screenshot%202025-03-23%20140124.png)
+
 ### 📚 Learning Center
 - **Master Level Tactics**: 10 predefined tactical scenarios with board visualization
 - **AI-Assisted Learning**: Play and chat with AI to improve your skills
 - **Endgame Tactics**: 10 predefined endgame scenarios to master closing positions
+  ![Lerning](https://github.com/soumyajitjalua1/chess-with-ai-agents/blob/main/Screenshot%202025-03-23%20140214.png)
 
 ### 🏆 Leaderboard
 - Track player rankings
 - Display achievements and progress
 - Performance statistics
+
+  ![Leaderbord](https://github.com/soumyajitjalua1/chess-with-ai-agents/blob/main/Screenshot%202025-03-23%20140512.png)
 
 ### ♟️ Game Modes
 
@@ -58,7 +63,7 @@ AI Chess Arena is a comprehensive chess platform that leverages AI to help playe
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ai-chess-arena.git
+git clone https://github.com/soumyajitjalua1/chess-with-ai-agents.git
 
 # Navigate to the project directory
 cd ai-chess-arena
@@ -82,7 +87,7 @@ Create a `.env` file in the root directory with the following variables:
 GROQ_API_KEY=your_groq_api_key
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-PORT=3000
+
 ```
 
 ## Usage
@@ -126,6 +131,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
+Soumyajit Jalua - [@Soumyajitjalua](https://x.com/Soumyajitjalua) - Soumyajitjalua@gmail.com
 
-Project Link: [https://github.com/yourusername/ai-chess-arena](https://github.com/yourusername/ai-chess-arena)
+Project Link: [https://github.com/yourusername/ai-chess-arena](https://github.com/soumyajitjalua1/chess-with-ai-agents)
