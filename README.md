@@ -1,69 +1,131 @@
-# Welcome to your Lovable project
+# AI Chess Arena
 
-## Project info
+AI Chess Arena is a comprehensive chess platform that leverages AI to help players of all levels improve their game. The platform combines traditional chess gameplay with advanced AI analysis, learning resources, and multiplayer capabilities.
 
-**URL**: https://lovable.dev/projects/f0f8b71e-03c5-4d2d-a314-5fd50fe933ea
+![AI Chess Arena Logo](https://github.com/yourusername/ai-chess-arena/blob/main/public/images/logo.png)
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+### 🔍 In-Game Analysis
+- Real-time position evaluation using Groq API
+- AI agents that detect and analyze the current position
+- Suggestions for optimal moves with explanations
+- Material evaluation and check detection
+- Board control assessment
 
-**Use Lovable**
+### 📚 Learning Center
+- **Master Level Tactics**: 10 predefined tactical scenarios with board visualization
+- **AI-Assisted Learning**: Play and chat with AI to improve your skills
+- **Endgame Tactics**: 10 predefined endgame scenarios to master closing positions
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f0f8b71e-03c5-4d2d-a314-5fd50fe933ea) and start prompting.
+### 🏆 Leaderboard
+- Track player rankings
+- Display achievements and progress
+- Performance statistics
 
-Changes made via Lovable will be committed automatically to this repo.
+### ♟️ Game Modes
 
-**Use your preferred IDE**
+#### Classical Chess
+- Adjustable difficulty levels
+- Choose your color (white/black)
+- Customizable time controls
+- Full board visualization
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+#### AI Challenge
+- Three AI opponent types:
+  - Basic: For beginners
+  - Tactical: For intermediate players
+  - Advanced: For experienced players
+- Play as white or black
+- Multiple time control options (5/10/15 minutes)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+#### Multiplayer
+- Real-time matches with players worldwide
+- WebSocket implementation for seamless connectivity
+- Chat functionality during games
 
-Follow these steps:
+## Technology Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Frontend: React.js with TypeScript
+- Backend: Node.js, Express
+- AI Integration: Groq API for chess analysis
+- Real-time Communication: WebSockets
+- Chess Engine: Stockfish (customized)
+- Authentication: JWT
+- Database: MongoDB
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/ai-chess-arena.git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Navigate to the project directory
+cd ai-chess-arena
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your API keys and configuration
+
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Environment Variables
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Create a `.env` file in the root directory with the following variables:
 
-**Use GitHub Codespaces**
+```
+GROQ_API_KEY=your_groq_api_key
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=3000
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Usage
 
-## What technologies are used for this project?
+1. Register or log in to your account
+2. Navigate to the desired game mode or learning resource
+3. For analysis, make a move and the AI will provide feedback
+4. For learning, select a tactic or engage with the AI tutor
+5. For multiplayer, wait for an opponent or invite a friend
 
-This project is built with .
+## API Documentation
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The API endpoints are documented using Swagger and can be accessed at `/api-docs` when running the development server.
 
-## How can I deploy this project?
+## Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/f0f8b71e-03c5-4d2d-a314-5fd50fe933ea) and click on Share -> Publish.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## I want to use a custom domain - is that possible?
+## Roadmap
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+- [ ] Mobile application
+- [ ] Tournament mode
+- [ ] Video tutorials
+- [ ] Opening book trainer
+- [ ] Puzzle of the day
+- [ ] Social sharing features
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Groq](https://groq.com/) for their powerful AI API
+- [Stockfish](https://stockfishchess.org/) chess engine
+- The open-source chess community for inspiration and resources
+
+## Contact
+
+Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
+
+Project Link: [https://github.com/yourusername/ai-chess-arena](https://github.com/yourusername/ai-chess-arena)
